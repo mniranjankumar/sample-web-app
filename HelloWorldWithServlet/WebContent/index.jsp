@@ -9,7 +9,5 @@
 <body>
 	<h4>Welcome to Hello World</h4>
 	<a href="http://localhost:8081/HelloWorldWithServlet/HelloWorldServlet">click Here</a>
-	
-	<h4> This is testing for version</h4>
 </body>
 </html>
