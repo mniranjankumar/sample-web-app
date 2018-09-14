@@ -7,8 +7,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<h4>Welcome to Hello World</h4>
-	<a href="http://localhost:8081/HelloWorldWithServlet/HelloWorldServlet">click Here</a>
-	
+	<b>This is success page.</b>
 </body>
-</html>	
+</html>
