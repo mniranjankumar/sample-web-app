@@ -42,6 +42,8 @@ public class Servlet1 extends HttpServlet {
 	}
 
 	private void doTask(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
+		
+		//readout alldata
 		/*String path = "http://localhost:8082/Servlet2/Servlet2";
 		String fname = (String)request.getParameter("fname");
 		HttpSession s1 = request.getSession();

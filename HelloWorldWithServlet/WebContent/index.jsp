@@ -9,6 +9,9 @@
 <body>
 	<h4>Welcome to Hello World</h4>
 	<a href="http://localhost:8081/HelloWorldWithServlet/HelloWorldServlet">click Here</a>
+<<<<<<< HEAD
 	
+=======
+>>>>>>> refs/remotes/origin/master
 </body>
 </html>	
