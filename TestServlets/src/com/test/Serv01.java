@@ -1,26 +1,26 @@
-package com.serv;
+package com.test;
 
 import java.io.IOException;
+import java.io.PrintWriter;
 
-import javax.servlet.ServletContext;
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
 
 /**
- * Servlet implementation class Servlet2
+ * Servlet implementation class Serv01
  */
-@WebServlet("/Servlet2")
-public class Servlet2 extends HttpServlet {
+@WebServlet("/Serv01")
+public class Serv01 extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public Servlet2() {
+    public Serv01() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -29,7 +29,6 @@ public class Servlet2 extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
 		doTask(request, response);
 	}
 
@@ -40,15 +39,13 @@ public class Servlet2 extends HttpServlet {
 		doTask(request, response);
 	}
 
-	private void doTask(HttpServletRequest request, HttpServletResponse response) {
-		// TODO Auto-generated method stub
-		System.out.println("Servlet2");
-		HttpSession s2 = request.getSession();
-		if(request.equals(null)) System.out.println("s2 is null");
-		String fname = (String)s2.getAttribute("fname");
-		ServletContext sc = request.getServletContext();
-		System.out.println(sc.getAttribute("fname"));
-		System.out.println(fname);
+	private void doTask(HttpServletRequest request, HttpServletResponse response) throws IOException {
+
+        response.setContentType("text/html");  
+        PrintWriter out = response.getWriter();  
+      
+        out.print("<br>welcome to servlet<br>");  
+
 	}
 
 }
